@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Contatos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Contatos</h1>
+
+  <button onclick="executar('primeiro')">Primeiro</button>
+  <button onclick="executar('ultimo')">Último</button>
+  <button onclick="executar('todos')">Todos</button>
+  <button onclick="executar('encerrar')">Encerrar</button>
+
+  <!-- FORMULÁRIO -->
+  <div class="formulario">
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="telefone" placeholder="Telefone">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="adicionarContato()">Adicionar Contato</button>
+  </div>
+
+  <div id="saida" class="saida"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

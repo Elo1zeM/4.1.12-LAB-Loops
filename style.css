@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* Fundo degradê sofisticado entre azul marinho e preto */
+  background: linear-gradient(135deg, #00122e 0%, #000000 100%);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 420px;
+  /* Sombra dourada bem sutil para dar profundidade */
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.15);
+  color: #00122e;
+  border-top: 5px solid #d4af37; /* Detalhe em dourado no topo */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00122e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/* BOTÕES DE AÇÃO */
+button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 12px;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  background: #00122e; /* Azul Marinho */
+  color: #d4af37; /* Texto Dourado */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #d4af37; /* Inverte: Fundo Dourado */
+  color: #00122e; /* Texto Marinho */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* ÁREA DE SAÍDA */
+.saida {
+  margin-top: 20px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  min-height: 140px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.saida hr {
+  border: 0;
+  border-top: 1px solid #d4af37;
+  opacity: 0.3;
+  margin: 10px 0;
+}
+
+/* FORMULÁRIO */
+.formulario {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.formulario input:focus {
+  border-color: #00122e;
+  box-shadow: 0 0 0 2px rgba(0, 18, 46, 0.1);
+}
+
+/* BOTÃO ADICIONAR (Destaque Dourado) */
+.formulario button {
+  background: #d4af37;
+  color: #000;
+  border: none;
+  margin-top: 10px;
+}
+
+.formulario button:hover {
+  background: #b8962e;
+  color: #fff;
+}
+
+/* SCROLLBAR PERSONALIZADA */
+.saida::-webkit-scrollbar {
+  width: 6px;
+}
+
+.saida::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 10px;
+}
